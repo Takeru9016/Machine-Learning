@@ -37,8 +37,11 @@ dt.fit(X_train, y_train)
 print("Decision Tree accuracy:", dt.score(X_test, y_test))
 
 # Evaluate metrics - precision, recall, and F1 score
+print("KNeighbors accuracy:")
 print(classification_report(y_test, knn.predict(X_test)))
+print("Logistic Regression accuracy:")
 print(classification_report(y_test, logreg.predict(X_test)))
+print("Decision Tree accuracy:")
 print(classification_report(y_test, dt.predict(X_test)))
 
 # Plot decision boundaries
